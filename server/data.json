@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "John",
+        "description": "A friendly and outgoing person who enjoys spending time with friends and family."
+    },
+    {
+        "id": 2,
+        "name": "Jessica",
+        "description": "A hardworking and dedicated employee who always goes above and beyond in her job."
+    },
+    {
+        "id": 3,
+        "name": "Mike",
+        "description": "An avid sports fan who enjoys watching and playing all kinds of sports, especially basketball."
+    },
+    {
+        "id": 4,
+        "name": "Samantha",
+        "description": "A creative and artistic person who loves painting, drawing, and making crafts in her spare time."
+    },
+    {
+        "id": 5,
+        "name": "Emily",
+        "description": "A kind and compassionate individual who is always willing to help others in need."
+    },
+    {
+        "id": 6,
+        "name": "David",
+        "description": "A passionate and knowledgeable music lover who enjoys listening to and playing a variety of genres."
+    },
+    {
+        "id": 7,
+        "name": "Karen",
+        "description": "An adventurous and outgoing person who loves to travel and explore new places."
+    },
+    {
+        "id": 8,
+        "name": "Robert",
+        "description": "A dedicated and driven professional who is always striving to be the best in his field."
+    },
+    {
+        "id": 9,
+        "name": "Sara",
+        "description": "A compassionate and caring person who is always there for her friends and family."
+    },
+    {
+        "id": 10,
+        "name": "James",
+        "description": "An intelligent and curious person who enjoys learning new things and solving problems."
+    }
+]

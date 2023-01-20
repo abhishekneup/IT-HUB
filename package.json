@@ -1,0 +1,10 @@
+{
+	"scripts": {
+		"server": "cd server && nodemon server.js",
+		"client": "cd client && pnpm run dev",
+		"dev": "concurrently \"pnpm run server\" \"pnpm run client"
+	},
+	"devDependencies": {
+		"concurrently": "^7.6.0"
+	}
+}
