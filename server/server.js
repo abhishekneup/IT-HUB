@@ -8,8 +8,18 @@ app.use(cors());
 
 app.listen(3000, console.log("server started on 3000"));
 
+// app.get("/description", (req, res) => {
+//   fs.readFile(`${cwd()}/data.json`, "utf8", (err, data) => {
+//     if (err) {
+//       console.log(err);
+//     } else {
+//       res.send(data);
+//     }
+//   });
+// });
+
 app.get("/description", (req, res) => {
-  fs.readFile(`${cwd()}/data.json`, "utf8", (err, data) => {
+  fs.readFile(`${cwd()}/news.json`, "utf8", (err, data) => {
     if (err) {
       console.log(err);
     } else {
