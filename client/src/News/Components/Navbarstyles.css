@@ -1,48 +1,61 @@
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: black;
-    height: 50px;
-    padding: 30px, 30px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+:root {
+  --bg-color: black;
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  --font-color-primary: aliceblue;
+  --font-color-secondary: blue;
+  --hover-color: red;
 
+  --font-weight: 600;
+  --font-size: 1.3rem;
 }
-#navbar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+nav {
+  background: var(--bg-color);
+  padding-block: 10px;
 }
-#navbar li{
-    list-style: none;
-    padding: 0px 30px;
-    position: relative;
+
+.wrapper {
+  width: 85%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-#navbar li a{
-   text-decoration: none;
-   font-size: 1.3rem;
-   font-weight: 600;
-   color:aliceblue;
-   transition: 0.3s ease-in-out;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
 }
-#navbar li a:hover{
-   color:blue;
+
+.navbar li {
+  list-style: none;
 }
-#navbar li a:hover::after{
-    content: "";
-    width: 50%;
-    height: 2px;
-    position: absolute;
-    background:red;
-    bottom: -4px;
-    left: 20px;
+
+.navbar li a {
+  font-weight: var(--font-weight);
+  color: var(--font-color-primary);
+  font-size: var(--font-size);
+  text-decoration: none;
 }
-#navbar li a.active::after{
-    content: "";
-    width: 50%;
-    height: 2px;
-    position: absolute;
-    background:red;
-    bottom: -4px;
-    left: 20px;
+
+.navbar li a::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 3px;
+  width: 100%;
+  background: var(--hover-color);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 400ms ease-out;
+}
+
+.navbar li:hover a::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.navbar li .active::after {
+  transform: scaleX(1);
+  transform-origin: initial;
 }
