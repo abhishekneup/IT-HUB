@@ -1,0 +1,48 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height: 50px;
+    padding: 30px, 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0px 30px;
+    position: relative;
+}
+#navbar li a{
+   text-decoration: none;
+   font-size: 1.3rem;
+   font-weight: 600;
+   color:aliceblue;
+   transition: 0.3s ease-in-out;
+}
+#navbar li a:hover{
+   color:blue;
+}
+#navbar li a:hover::after{
+    content: "";
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    background:red;
+    bottom: -4px;
+    left: 20px;
+}
+#navbar li a.active::after{
+    content: "";
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    background:red;
+    bottom: -4px;
+    left: 20px;
+}
