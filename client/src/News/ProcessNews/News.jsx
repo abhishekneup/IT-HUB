@@ -1,3 +1,4 @@
+import "./News_Styles.css"
 import { useState, useEffect } from "react";
 
 export const News = () => {
@@ -20,7 +21,7 @@ export const News = () => {
         return (
           <div >
             <img src={item.image}/>
-            <h1>{item.title}</h1>
+            <p>{item.title}</p>
             <a href={item.href}>read more</a>
           </div>
         );

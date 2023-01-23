@@ -1,0 +1,13 @@
+:root {
+    --bg-color: black;
+    --shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    --font-color-primary: aliceblue;
+    --font-color-secondary: blue;
+    --hover-color: red;
+
+    --font-weight: 600;
+    --font-size: 1.3rem;
+  }
+  *{
+    font-family: sans-serif;
+  }
